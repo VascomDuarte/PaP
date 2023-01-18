@@ -6,62 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  height: 125vh;
-  background-image: url("https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg");
-  background-size: cover;
-  font-family: "source sans pro", sans-serif;
-  margin-top: 80px;
-  padding: 30px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-header {
-  position: fixed;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-  font-family: "Source Sans Pro", sans-serif;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 0 25px 0 black;
-}
-
-header image {
-  height: 80px;
-  margin-left: 40px;
-}
-
-header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+  list-style: none;
+
 }
 
-header * {
-  display: inline;
-}
-header li {
-  margin: 20px;
-}
-
-header li a {
-  color: black;
-  text-decoration: none;
+:root{
+  --bg-color: #222327;
+  --text-color: #fff;
+  --main-color: #29fd53;
 }
