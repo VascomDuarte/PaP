@@ -8,11 +8,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-color: #222327;
+  background-color: #ffffff;
 
 }
 
-.nav1 li, a, button {
+
+
+.main li, a {
   font-family: 'source Sans Pro', sans-serif;
   font-weight:  500;
   font-size: 16px;
@@ -20,10 +22,20 @@
   text-decoration: none;
 }
 
+.nav1 li, a, button {
+  font-family: 'source Sans Pro', sans-serif;
+  font-weight:  500;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
 
 header{
   display: flex;
   justify-content: space-between;
+  background-color: black;
   align-items: center;
   padding: 30px 10%;
 }
@@ -32,22 +44,23 @@ header{
 
 .logo{
   cursor: pointer !important;
-
+  width: 10%;
+  height: 10%;
 }
 
-.nav__links {
+.nav1 {
   list-style: none;
 }
 
-.nav__links li{
+.nav1 li{
   display: inline-block;
   padding: 0px 20px;
 }
 
-.nav__links li a {
+.nav1 li a {
   transition: all 0.3s ease 0s;
 }
-.nav__links li a:hover {
+.nav1 li a:hover {
   color: #0088a9
 }
 
