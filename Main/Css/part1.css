@@ -2,18 +2,49 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900");
 
+@media screen and (max-width: 768px) {
+  
+}
 
 * {
   margin: 0;
   padding: 0;
 }
 
+.logo {
+  cursor: pointer !important;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+
 .navbarmain {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: black !important;
   padding: 30px 10%;
 }
+
+.navmainV1 {
+  list-style: none;
+  display: inline-flex;
+  background-color: black !important;
+  align-items: center;
+}
+
+.navmainV1 li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.navmainV1 li a {
+  transition: all 0.3s ease 0s;
+}
+.navmainV1 li a:hover {
+  color: #cab72b;
+}
+
+/* path: \PaP\Main\Css\part1.css */
 
 .main {
   list-style: none;
@@ -33,35 +64,6 @@ a {
   background-color: black;
   padding: 0px 10px;
 
-}
-
-.navmainV1 li,
-a,
-button {
-  font-family: "source Sans Pro", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  color: white;
-  background-color: rgb(0, 0, 0) !important;
-  text-decoration: none;
-}
-
-/*header{
-  display: inline-flex;
-  justify-content: space-between;
-  background-color: black;
-  align-items: center;
-  padding: 30px 30%;
-}
-*/
-
-.logo {
-  cursor: pointer !important;
-  object-fit: contain;
-  align-items: left !important;
-  padding: 0px 0px;
-  width: 10%;
-  height: 10%;
 }
 
 .navbar2{
@@ -88,36 +90,4 @@ button {
   color: white;
   background-color: rgb(53, 29, 147) !important;
   text-decoration: none;
-}
-
-.navmainV1 {
-  list-style: none;
-  display: inline-flex;
-  background-color: black !important;
-  align-items: center;
-}
-
-.navmainV1 li {
-  display: inline-block;
-  padding: 0px 10px;
-}
-
-.navmainV1 li a {
-  transition: all 0.3s ease 0s;
-}
-.navmainV1 li a:hover {
-  color: #cab72b;
-}
-
-button {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
 }
