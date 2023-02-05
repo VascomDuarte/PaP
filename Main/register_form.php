@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
    $message = $diff->y;
    
 
-   $select = " SELECT * FROM tb_utilizadores WHERE email = '$email' or username = '$username'";
+   $select = " SELECT * FROM user WHERE email = '$email' or username = '$username'";
 
    $result = mysqli_query($conn, $select);
 
@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
       if ($pass != $cpass) {
          $error[] = 'As palavras passes não correspondem!';
       } else {
-         $insert = "INSERT INTO tb_utilizadores(email,username,pwd,gender,dtn) VALUES('$username','$email','$pwd_save','$sex','$date')";
+         $insert = "INSERT INTO user(username,email,password,gender,dtn_nascimento) VALUES('$username','$email','$pwd_save','$sex','$date')";
          mysqli_query($conn, $insert);
          header('location:login_form.php');
       }
