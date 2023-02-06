@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
       }
    }
  
-
+   echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, array("cost" => 10));
 
 }
 
@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./Css/login.css">
+   <link rel="stylesheet" href="Css/acc_style.css">
    <title>Webchatify</title>
    <link rel="" type= "" href="">
 </head>

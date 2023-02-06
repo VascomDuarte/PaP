@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
    $pass = md5($_POST['password']);
    
 
-   $sql  = " SELECT * FROM tb_utilizadores WHERE email = '$email'";
+   $sql  = " SELECT * FROM user WHERE email = '$email'";
 
    $result = mysqli_query($conn, $sql);
 
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 
    $row = mysqli_fetch_assoc( $result );
 
-   $passwordHash = $row['pwd'];
+   $passwordHash = $row['password'];
    $passwordCheck = password_verify( $pass, $passwordHash );
    if( ! $passwordCheck )
    {
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
       $_SESSION['usermail'] = $email;
       $_SESSION['id_user'] = $row['id'];
       $_SESSION['nome_user'] = $row['username'];
-      header('location:chat_main.php');
+      header('location:fff.html');
    }
 
 }
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/Css/login.css">
+   <link rel="stylesheet" href="Css/acc_style.css">
 </head>
 
 <body>

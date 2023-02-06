@@ -14,21 +14,23 @@
 .logo {
   cursor: pointer !important;
   object-fit: contain;
+  display: block;
   width: 100px;
-  height: 100px;
+  height: 25%;
+  margin-top: 25px;
 }
 
 .navbarmain {
   display: flex;
   justify-content: space-between;
   background-color: black !important;
-  padding: 30px 10%;
+  padding: 2px 10%;
 }
 
 .navmainV1 {
   list-style: none;
   display: inline-flex;
-  background-color: black !important;
+  /*background-color: black !important; */
   align-items: center;
 }
 
@@ -61,11 +63,11 @@ a {
   font-size: 24px;
   color: white;
   text-decoration: none;
-  background-color: black;
+  background-color: black !important;
   padding: 0px 10px;
 
 }
-
+/*
 .navbar2{
   display: flex;
   justify-content: space-between;
@@ -90,4 +92,4 @@ a {
   color: white;
   background-color: rgb(53, 29, 147) !important;
   text-decoration: none;
-}
+}*/
