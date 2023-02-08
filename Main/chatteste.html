@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <style>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.nav-options {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-options li {
+  padding: 0 10px;
+}
+
+.right-options {
+  display: flex;
+  padding: 10px;
+}
+
+.right-options a {
+  margin-left: 10px;
+}
+
+.second-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 100%;
+}
+    </style>
+  </head>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+      </div>
+      <ul class="nav-options">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a id="address">Initial Address</a></li>
+      </ul>
+      <div class="right-options">
+        <a href="#login">Login</a>
+        <a href="#register">Register</a>
+      </div>
+    </nav>
+
+    <nav class="second-navbar">
+        <ul class="nav-options">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+
+<script>
+  var addresses = ["123 Main St", "456 Elm St", "789 Oak Ave", "999 Maple Blvd"];
+  var counter = 0;
+
+  setInterval(function() {
+    document.getElementById("address").innerHTML = addresses[counter];
+    counter++;
+
+    if (counter >= addresses.length) {
+      counter = 0;
+    }
+  }, 3000);
+</script>
+
+</html>

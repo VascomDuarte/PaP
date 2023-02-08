@@ -8,6 +8,14 @@
    text-decoration: none;
 }
 
+body{
+   background-image: url(../img/grunge-paint-background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
 /*.container{
    min-height: 100vh;
    background-color: #eee;

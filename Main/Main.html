@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talhos Grosso</title>
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="/Main/Css/css/style-main.css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Set the viewport to the width of the device and initial-scale to 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to the CSS stylesheet -->
+    <!-- <link rel="stylesheet" href="Css/part1.css" /> -->
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <!-- Canonical link -->
+    <link href="../Img/" rel="canonical" />
+    <!-- Set the title of the page -->
+    <title>JGS - Inicio</title>
   </head>
-  <body>
-    <header>
-      <a href="#" class="logo"
-        ><i class="ri-home-7-fill"></i><span>Logo</span></a
-      >
-      <nav>
-      <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Serviços</a></li>
-        <!--<li><a href="#">
-            https://www.youtube.com/watch?v=VRrEquQfh88&ab_channel=TahmidAhmed
-        </a></li>-->
-        <li><a href="#">Contactos</a></li>
-      </ul>
-    </nav>
-      <div class="main">
-        <a href="login_form.php" class="user"><i class="ri-user-3-fill"></i>Sign In</a>
-        <a href="#">Register</a>
-        <div class="bx bx-menu" id="menu-icon"></div> 
-
+  <header>
+    <!-- Navbar with logo, navigation options, and login/register options -->
+    <nav class="navbar">
+      <!-- Logo container -->
+      <div class="logo">
+        <!-- Image of the logo -->
+        <img src="Img/—Pngtree—happy butcher vector standing butcher_5205420.png" alt="logo">
       </div>
-    </header>
+      <!-- Navigation options -->
+      <ul class="nav-options">
+        <!-- Commented out navigation links for home, team, services, and contact -->
+        <!-- <li><a href="#home">Home</a></li>
+        <li><a href="#team">Sobre Nós</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contactos</a></li> -->
+        <!-- Address placeholder -->
+        <li><a id="address">Initial Address</a></li>
+      </ul>
+      <!-- Login and register options -->
+      <div class="right-options">
+        <a href="login_form.php">Login</a>
+        <a href="register_form.php">Register</a>
+      </div>
+    </nav>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Second navbar with navigation options -->
+    <nav class="second-navbar">
+      <!-- Navigation options -->
+        <ul class="nav-options">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+  </header>
+  <!-- JavaScript code to change the address in the navbar -->
+  <script>
+    // Array of addresses
+    var addresses = ["123 Main St", "456 Elm St", "789 Oak Ave", "999 Maple Blvd"];
+    // Counter for the addresses
+    var counter = 0;
+  
+    // Set an interval to change the address every 10 seconds
+    setInterval(function() {
+      // Get the address placeholder and set its inner HTML to the current address
+      document.getElementById("address").innerHTML = addresses[counter];
+      // Increment the counter
+      counter++;
+  
+      // If the counter is equal to or greater than the number of addresses, reset it to 0
+      if (counter >= addresses.length) {
+        counter = 0;
+      }
+    }, 10000);
+  </script>
   </body>
 </html>
