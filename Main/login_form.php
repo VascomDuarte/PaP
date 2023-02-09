@@ -53,8 +53,8 @@ if (isset($_POST['submit'])) {
       $_SESSION['id_user'] = $row['id'];
       $_SESSION['nome_user'] = $row['username'];
 
-      // Redirect to the fff.html page
-      header('location:fff.html');
+      // Redirect to the main.html page
+      header('location:main.html');
    }
 }
 

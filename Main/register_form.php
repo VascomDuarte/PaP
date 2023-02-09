@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
    $result = mysqli_query($conn, $select);
    
    // If the user's age is less than 18, show an error message
-   if ($message < 18) {
+   if ($message <= 18) {
       $error[] = 'Não possui idade suficiente';
    }
    // If the email or username already exists, show an error message

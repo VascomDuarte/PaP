@@ -1,25 +1,37 @@
+/* Import two fonts styles from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap");
-
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900");
 
+/* Style for the first navigation bar */
 .navbar {
+  /* Set the font style and size */
   font-family: "source Sans Pro", sans-serif;
   font-weight: 500;
   font-size: 24px;
+  
+  /* Display elements in a flexbox and align items at the center */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  /* Set the height, background color, and text color */
   height: 100px;
   background-color: #333;
   color: #fff;
   font-size: 14px;
+  
+  /* Position the navigation bar at the top of the page */
   position: fixed;
   top: 0;
+  
+  /* Set the width to the full width of the page and position it at the right */
   width: 100%;
   right: 0;
 }
 
+/* Style for the logo */
 .logo {
+  /* Add padding and set the display to a block */
   padding: 30px;
   margin-top: 0px; 
   cursor: pointer !important;
@@ -30,67 +42,90 @@
   overflow: hidden;
 }
 
+/* Style for the logo image */
 .logo img {
+  /* Set the width and height to automatically adjust to the image */
   width: 100%;
   height: auto;
   max-width: none;
   max-height: none;
 }
 
+/* Style for the navigation options */
 .nav-options {
+  /* Display elements in a flexbox and remove the list styling */
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
 
+/* Style for each navigation option */
 .nav-options li {
+  /* Add padding on the left and right sides */
   padding: 0 10px;
-  
 }
 
+/* Style for the navigation links */
 .nav-options a {
+  /* Set the text color and remove the underline */
   color: white;
   text-decoration: none;
+  
+  /* Add a transition effect */
   transition: all 0.3s ease 0s;
 }
 
+/* Style for when the navigation link is hovered over */
 .nav-options a:hover {
+  /* Change the text color */
   color: #cab72b;
 }
 
+/* Style for the right-side navigation options */
 .right-options {
+  /* Display elements in a flexbox and add padding */
   display: flex;
   padding: 10px;
-  
 }
 
+/* Style for each right-side navigation option */
 .right-options a {
-  margin-left: 10px;
-  transition: all 0.3s ease 0s;
-  color: white;
-  text-decoration: none;
-}
-
-.right-options a:hover {
-  color: #cab72b;
-}
-
-.second-navbar {
-  font-family: "source Sans Pro", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-color: rgb(132, 127, 127);
-  color: #fff;
-  font-size: 14px;
-  position: fixed;
-  top: 100px;
-  right: 0;
-  width: 100%;
-  text-decoration: none;
-}
+    /* Add margin on the left side and add a transition effect */
+    margin-left: 10px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .right-options a:hover {
+    /* Change the color of the text when hovering over it */
+    color: #cab72b;
+  }
+  
+  .second-navbar {
+    /* Define the font properties */
+    font-family: "source Sans Pro", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    
+    /* Display the elements as a flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Set the height, background color, and font color */
+    height: 50px;
+    background-color: rgb(132, 127, 127);
+    color: #fff;
+    
+    /* Set the font size and text decoration */
+    font-size: 14px;
+    text-decoration: none;
+    
+    /* Fix the position of the navigation bar */
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 100%;
+  }
